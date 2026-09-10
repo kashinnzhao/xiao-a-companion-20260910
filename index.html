@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff5f7">
+  <meta name="description" content="小A，今天想被拖拖怎么陪？逗你笑、认真夸夸，或者陪你安静待一会儿。">
+  <meta name="robots" content="noindex, nofollow">
+  <title>小A，今天想被拖拖怎么陪？</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='.9em' font-size='54'%3E💌%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="wordmark" href="./" aria-label="回到陪伴选择"><span aria-hidden="true">♥</span> 拖拖的偏心小站</a>
+      <span class="edition">小A 专属版</span>
+    </header>
+
+    <main class="experience">
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow">今天也想，对你好一点。</p>
+          <h1 id="page-title">小A，今天想被<br><span class="name">拖拖</span>怎么陪<span class="question-mark">？</span></h1>
+          <p class="intro-note">你只管选，剩下的交给拖拖。</p>
+        </div>
+        <div class="art-wrap" id="art-wrap" hidden>
+          <img class="companion-art" src="assets/companions.png" width="1254" height="1254" alt="小兔子靠着小熊，小熊捧着一颗红色爱心" decoding="async">
+          <span class="art-note">在你这边。一直。</span>
+        </div>
+      </section>
+
+      <section class="companion-card" aria-label="选择今天的陪伴">
+        <div id="chooser" class="chooser">
+          <div class="card-heading"><span class="tiny-heart" aria-hidden="true">♥</span><p>给此刻的小A</p></div>
+          <h2>想要哪一种陪伴？</h2>
+          <p class="card-note">按你现在的心情来，随时都能换。</p>
+          <div class="choices">
+            <button class="choice laugh" type="button" data-mode="laugh">
+              <span class="choice-icon" aria-hidden="true">☺</span>
+              <span class="choice-copy"><strong>逗我笑</strong><span>拖拖的笨蛋时刻，请查收</span></span>
+              <span class="choice-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button class="choice praise" type="button" data-mode="praise">
+              <span class="choice-icon" aria-hidden="true">✧</span>
+              <span class="choice-copy"><strong>夸夸我</strong><span>听听拖拖有多偏心你</span></span>
+              <span class="choice-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button class="choice quiet" type="button" data-mode="quiet">
+              <span class="choice-icon" aria-hidden="true">☾</span>
+              <span class="choice-copy"><strong>安静陪我</strong><span>什么都不做，也很好</span></span>
+              <span class="choice-arrow" aria-hidden="true">↗</span>
+            </button>
+          </div>
+          <p class="bottom-note">不用马上开心。这里，什么心情都可以。</p>
+        </div>
+
+        <div id="response" class="response" hidden>
+          <div class="response-top"><button id="back-button" class="back-button" type="button"><span aria-hidden="true">←</span> 换一种陪伴</button><span id="mode-label" class="mode-label"></span></div>
+          <div class="response-content" id="response-content" aria-live="polite" aria-atomic="true">
+            <div class="response-symbol" id="response-symbol" aria-hidden="true"></div>
+            <p class="response-kicker" id="response-kicker"></p>
+            <h2 id="response-title" tabindex="-1"></h2>
+            <p class="message" id="message"></p>
+            <p class="afterword" id="afterword"></p>
+          </div>
+          <button id="next-button" class="next-button" type="button"></button>
+          <p class="signed">偏心你这件事，拖拖很认真。<span>♡</span></p>
+        </div>
+      </section>
+    </main>
+
+    <footer><span>FROM 拖拖</span><span class="footer-heart" aria-hidden="true">♡</span><span>ONLY FOR 小A</span></footer>
+  </div>
+</body>
+</html>
